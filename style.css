@@ -13,35 +13,153 @@ body {
 .top {
     background-color: #FFCC80;
     height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.rectangulo2 {
+    width: 150px;
+    height: 30px;
+    background-color: orange;
+}
+
 .cuadrado {
     width: 150px;
     height: 150px;
     background-color: orange;
     position: absolute;
     top: 20px;
-    left: 200px;
+    left: 375px;
 }
 
 .middle {
     background-color: white;
-    height: 50%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center; 
-    gap: 20px; 
+    height: 55%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
     padding: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
+/* Cuadrados del medio */
 .square {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.square:nth-child(1) {
+    background-color: lightblue;
+}
+
+.square:nth-child(2) {
+    background-color: #CD5C5C;
+}
+
+.square:nth-child(3) {
     background-color: orange;
 }
 
+.square:nth-child(4) {
+    background-color: orange;
+}
+
+.square:nth-child(5) {
+    background-color: lightblue;
+}
+
+.square:nth-child(6) {
+    background-color: #CD5C5C;
+}
+
+/* Cuadrados interiores del medio */
+.cuadradito {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.square:nth-child(1) .cuadradito {
+    background-color: #4682B4; 
+}
+
+.square:nth-child(2) .cuadradito {
+    background-color: #8B0000;
+}
+
+.square:nth-child(3) .cuadradito {
+    background-color: #CC5500;
+}
+
+.square:nth-child(4) .cuadradito {
+    background-color: #CC5500;
+}
+
+.square:nth-child(5) .cuadradito {
+    background-color: #4682B4;
+}
+
+.square:nth-child(6) .cuadradito {
+    background-color: #8B0000;
+}
+
+/* Rectángulos interiores del medio */
+.rectangulo1 {
+    width: 140px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.square:nth-child(1) .rectangulo1 {
+    background-color: #4682B4; 
+}
+
+.square:nth-child(2) .rectangulo1 {
+    background-color: #8B0000;
+}
+
+.square:nth-child(3) .rectangulo1 {
+    background-color: #CC5500;
+}
+
+.square:nth-child(4) .rectangulo1 {
+    background-color: #CC5500;
+}
+
+.square:nth-child(5) .rectangulo1 {
+    background-color: #4682B4;
+}
+
+.square:nth-child(6) .rectangulo1 {
+    background-color: #8B0000;
+}
 
 .bottom {
     background-color: lightgray;
-    height: 20%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.rectangulo {
+    width: 150px;
+    height: 30px;
+    background-color: grey;
 }
