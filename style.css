@@ -10,18 +10,23 @@ body {
     flex-direction: column;
 }
 
+
 .top {
     background-color: #FFCC80;
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .rectangulo2 {
-    width: 150px;
+    width: 320px;
     height: 30px;
     background-color: orange;
+    position: absolute;
+    top: 20px;
+    left: 550px;
 }
 
 .cuadrado {
@@ -33,11 +38,24 @@ body {
     left: 375px;
 }
 
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 540px;
+    color: white;
+    max-width: 325px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1;
+    white-space: normal;
+}
+
+
 .middle {
     background-color: white;
     height: 55%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
@@ -92,7 +110,7 @@ body {
 }
 
 .square:nth-child(1) .cuadradito {
-    background-color: #4682B4; 
+    background-color: #4682B4;
 }
 
 .square:nth-child(2) .cuadradito {
@@ -126,7 +144,7 @@ body {
 }
 
 .square:nth-child(1) .rectangulo1 {
-    background-color: #4682B4; 
+    background-color: #4682B4;
 }
 
 .square:nth-child(2) .rectangulo1 {
@@ -148,6 +166,8 @@ body {
 .square:nth-child(6) .rectangulo1 {
     background-color: #8B0000;
 }
+
+
 
 .bottom {
     background-color: lightgray;
